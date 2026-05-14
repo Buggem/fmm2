@@ -1,0 +1,73 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>Network Topology - Computer Networks</title>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <div id="header">
+            <a href="index.html" id="opt">
+                <img height=80 src="icons/home.png"/><br>
+                <b>Back to Home</b>
+            </a>
+            <a href="social.html" id="opt">
+                <img height=80 src="icons/social.png"/><br>
+                <b>Social Networks</b>
+            </a>
+            <a href="topology.html" id="opt">
+                <img height=80 src="icons/topology.png"/><br>
+                <b>Network Topology</b>
+            </a>
+            <a href="data.html" id="opt">
+                <img height=80 src="icons/data.png"/><br>
+                <b>Data Processing &amp; Transmission</b>
+            </a>
+            <a href="hw.html" id="opt">
+                <img height=80 src="icons/hw.png"/><br>
+                <b>Networking Hardware</b>
+            </a>
+            <a href="trmediums.html" id="opt">
+                <img height=80 src="icons/trmediums.png"/><br>
+                <b>Transmission Mediums</b>
+            </a>
+        </div>
+        <div id="body">
+            <h1>Network Topology</h1>
+            <p>Network topology refers to the way a computer network is set up, essentially how the devices on the network are linked together.</p>
+            <p>There are 6 main types of network topologies:</p>
+            <div id="topologiesContainer">
+                <div>
+                    <img height=140 src="icons/topology/bus.png"/><br>
+                    <b>Bus Network</b>
+                    <p>A bus network refers to a network topology where all devices are required to handle each other's network packets, going to and from machines (stations) in the preferred order. While this is practical for smaller networks, when it scales up to bigger WAN networks, it quickly becomes heavily impractical and chaotic.</p>
+                </div>
+                <div>
+                    <img height=140 src="icons/topology/ring.png"/><br>
+                    <b>Ring Network</b>
+                    <p>A ring network is a network topology that is shaped like a ring. It uses a single path from computer to computer, significantly bottlenecking the network speed and putting a lot of load on all computers on the network.</p>
+                </div>
+                <div>
+                    <img height=140 src="icons/topology/star.png"/><br>
+                    <b>Star Network</b>
+                    <p>A star network is a network topology where all computers connect to a single hub, aka a router. That router then delivers the packets where they need to go. While this significantly reduces the load on the network’s devices, it is still heavily impractical for big networks, and would force a heavy load on routers.</p>
+                </div>
+                <div>
+                    <img height=140 src="icons/topology/mesh.png"/><br>
+                    <b>Mesh Network</b>
+                    <p>A mesh network is a more efficient network topology where nodes are connected directly to each other, often routing the packets through the fastest available route. This is the topology used most by the internet. Since not all nodes have to be linked to every node, this provides a faster and more decentralized form of packet transmission.</p>
+                </div>
+                <div>
+                    <img height=140 src="icons/topology/hybrid.png"/><br>
+                    <b>Hybrid Network</b>
+                    <p>A hybrid topology does not refer to a specific network topology, but a combination of various network topologies. For example, a star topology and a ring topology creates a star-ring topology. Most complicated networks tend to use hybrid topologies as they are the most configurable to a network’s needs.</p>
+                </div>
+            </div>
+            <p>A navigation map in terms of network topology refers to a map of the network's physical and logical structure.</p>
+            <p>It is a visual representation of various portions of a computer network.<br>
+            Here is an example of a network map, showing a full layout of the network and its respective ISPs.</p>
+            <p id="navmapEx"><a target="_blank" href="images/navmapex.png"><img height=600 src="images/navmapex.png"/></a></p>
+            <p>As you can see, each and <i>every</i> IP address on the network is being shown in a clean, easy to understand visual format.</p>
+            <p>The main use of network maps is to help people understand the network's setup more easily then they otherwise would.</p>
+        </div>
+    </body>
+</html>
