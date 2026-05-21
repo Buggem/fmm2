@@ -108,7 +108,12 @@ p {
     background-image: linear-gradient(50deg, #00ff00, #00ffae);
     background-clip: border-box;
 }
-
+#sociogram {
+    border: solid 14px transparent;
+    background-image: linear-gradient(50deg, #aa0000, #0000bbaa);
+    background-clip: border-box;
+    border-radius: 5px;
+}
 /* fake image */
 .fakeimg {
     display: inline-flex;
