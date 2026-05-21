@@ -1,40 +1,63 @@
 <!doctype HTML>
 <html>
     <head>
-        <title>Social Networks - Computer Networks</title>
+        <title>Networking Hardware - Computer Networks</title>
         <link rel="stylesheet" href="index.css"/>
+        <link rel="shortcut icon" href="logo.png"/>
     </head>
     <body>
         <div id="header">
-            <a href="index.html" id="opt">
+            <a href="index.html" class="opt">
                 <img height=80 src="icons/home.png"/><br>
                 <b>Back to Home</b>
             </a>
-            <a href="social.html" id="opt">
+            <a href="social.html" class="opt">
                 <img height=80 src="icons/social.png"/><br>
                 <b>Social Networks</b>
             </a>
-            <a href="topology.html" id="opt">
+            <a href="topology.html" class="opt">
                 <img height=80 src="icons/topology.png"/><br>
                 <b>Network Topology</b>
             </a>
-            <a href="data.html" id="opt">
+            <a href="data.html" class="opt">
                 <img height=80 src="icons/data.png"/><br>
                 <b>Data Processing &amp; Transmission</b>
             </a>
-            <a href="hw.html" id="opt">
+            <a href="hw.html" class="opt">
                 <img height=80 src="icons/hw.png"/><br>
                 <b>Networking Hardware</b>
             </a>
-            <a href="trmediums.html" id="opt">
+            <a href="trmediums.html" class="opt">
                 <img height=80 src="icons/trmediums.png"/><br>
                 <b>Transmission Mediums</b>
             </a>
         </div>
         <div id="body">
-            <h1>Social Networks</h1>
-            <p>Social networks are computer-hosted websites or services that allow humans to connect and share information about themselves with another human virtually.</p>
-            <p style="width: 600px;"></p>
+            <h1>Networking Hardware</h1>
+            <p>Networking hardware refers to any device that is capable of interfacing with a network of other devices.<br>
+            These networks may contain various types of devices such as routers, switches, and servers, organised in different <a href="topology.html">topologies</a>.</p>
+
+            <h1>The Router, the Switch, the Node, and the Server</h1>
+            <h2>Router</h2>
+            <div class="fakeimg" style="float: left; height: 270px !important; background-image: url(images/ac1200-l.png)"><span>The TP-LINK Archer C1200 is a dual-band wireless router capable of up to 1.2 Gbps WiFi.</span></div>
+            <p>
+            <span>Routers store information on which devices send data packets, and to where it should send a packet next based on various routing algorithms.</span></p>
+            <h3>Hubs/Smart Hubs</h3>
+            <p>An essential component of network hardware, hubs provide a direct link into a network. Most routers have hubs attached to them, usually available through ethernet ports the back of the router.</p>
+            <h3>WAPs</h3>
+            <p>WAP stands for Wireless Access Point, referring to a device capable of connecting you to a computer network over radiowaves.<br>
+            It is essentially an extension of a hub, allowing for yet another entrypoint to a computer network.</p>
+            <h2 style="clear: both;">Switch</h2>
+            <div class="fakeimg" style="float: left; height: 270px !important; background-image: url(images/switch.png)"><span>The D-Link DGS-105 5-Port Gigabit Desktop Switch acts as a middleman, connecting each computer to eachother.</span></div>
+            <p>Switches have a big advantage over hubs, a switch does mostly what a hub does, however it can identify the address a piece of information needs to go to and send it to only that device instead of routing it through all connected devices. They work by keeping a table of addresses so the problem of data collision happens much less.</p>
+            <h2 style="clear: both;">Node</h2>
+            <div class="fakeimg" style="float: left; height: 270px !important; background-image: url(images/nic.png)"><span>The LevelOne GNC-0105T connects to a computer's PCI slot and acts as a network node.</span></div>
+            <p>Each node refers to a device that is capable of storing, sending, and receiving information on networks, allowing a computer to communicate with other nodes.</p>
+            <h2 style="clear: both;">Servers</h2>
+            <div class="fakeimg" style="float: left; height: 270px !important; background-image: url(images/servers.jpeg);"><span style="width: auto !important;">A cluster of dedicated servers for an internet web site.</span></div>
+            <p>Servers are computers on networks dedicated to serving various content - such as files, HTML pages, or video game packets.</p>
+
+
         </div>
     </body>
 </html>

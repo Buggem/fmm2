@@ -1,40 +1,59 @@
 <!doctype HTML>
 <html>
     <head>
-        <title>Social Networks - Computer Networks</title>
+        <title>Data Processing &amp; Transmission - Computer Networks</title>
         <link rel="stylesheet" href="index.css"/>
+        <link rel="shortcut icon" href="logo.png"/>
     </head>
     <body>
         <div id="header">
-            <a href="index.html" id="opt">
+            <a href="index.html" class="opt">
                 <img height=80 src="icons/home.png"/><br>
                 <b>Back to Home</b>
             </a>
-            <a href="social.html" id="opt">
+            <a href="social.html" class="opt">
                 <img height=80 src="icons/social.png"/><br>
                 <b>Social Networks</b>
             </a>
-            <a href="topology.html" id="opt">
+            <a href="topology.html" class="opt">
                 <img height=80 src="icons/topology.png"/><br>
                 <b>Network Topology</b>
             </a>
-            <a href="data.html" id="opt">
+            <a href="data.html" class="opt">
                 <img height=80 src="icons/data.png"/><br>
                 <b>Data Processing &amp; Transmission</b>
             </a>
-            <a href="hw.html" id="opt">
+            <a href="hw.html" class="opt">
                 <img height=80 src="icons/hw.png"/><br>
                 <b>Networking Hardware</b>
             </a>
-            <a href="trmediums.html" id="opt">
+            <a href="trmediums.html" class="opt">
                 <img height=80 src="icons/trmediums.png"/><br>
                 <b>Transmission Mediums</b>
             </a>
         </div>
         <div id="body">
-            <h1>Social Networks</h1>
-            <p>Social networks are computer-hosted websites or services that allow humans to connect and share information about themselves with another human virtually.</p>
-            <p style="width: 600px;"></p>
+            <h1>Data Processing &amp; Transmission</h1>
+            <h2>Communication protocols</h2>
+            <p>A communication protocol is a system of rules that allows 2 or more entities of a communications system to transmit information via any kind of variation of a physical quantity.
+            The protocol defines the rules, syntax, semantics and synchronisation of communication and possible error recovery methods. Protocols may be implemented by hardware, software, or a combination of both.</p>
+
+            <h2>TCP/IP</h2>
+            <p>A common communication protocol used on the internet is TCP/IP, a combination of Transmission Control Protocol running over the top of Internet Protocol. TCP/IP has historically been used for various internet services, such as HTTP, FTP, SSH, and DNS. TCP provides a slow but reliable connection, resending packets if they get tampered with along the way. You can think of TCP as the letter where as IP is the envelope - it shows the reciever's address along with the return address of the sender and <a target="_blank" href="images/ipv4pack.png">some other information</a>.</p>
+
+            <h2>Server-client model</h2>
+            <p>A server-client model refers to a communcation model between two systems - the provider of information (the server) and the reciever of information (the client). They usually participate in a handshake so the client can tell the server what data it wants served and how it wants it to be served. They each have unique software running to complete a connection, as seen simplified below.</p>
+            <img id="simplifiedhttp" width=600 src="images/clientserver.png"/>
+
+            <h1>Application-layer Protocols</h1>
+            Application-layer protocols are protocols that serve a specific purpose built upon transport protocols like TCP or UDP.<br>
+            Here are some examples of popular application-layer internet protocols.
+            <h2>Domain Name System (DNS)</h2>
+            <p style="width: 600px;">DNS, the Domain Name System, can be best explained as a sort of table that transforms user-readable domain names (like <a href="https://www.google.com">google.com</a>) to IP addresses (like 142.250.183.46). There are a variety of servers you can connect to through IP address that decide what domain should resolve to what. For example, 1.1.1.1 for Cloudflare and 8.8.8.8 for Google.</p>
+            <h2>HyperText Transfer Protocol (HTTP)</h2>
+            <p style="width: 600px;">HyperText Transfer Protocol, or HTTP for short, is a form of data transfer protocol created by Tim Berners-Lee in 1989 specifically designed to serve HTML webpages. While initially intended for fast transmission of scientific research, the protocol has expanded into something else completely, being used for downloading big files to use for advanced dynamic webserver requests.</p>
+            <h2>File Transfer Protocol (FTP)</h2>
+            <p style="width: 600px;">FTP (File Transfer Protocol) is one main way of conviniently sharing files between computers over a server. It uses the server-client model to facilite transfer of unencrypted files and other text information.</p>
         </div>
     </body>
 </html>
